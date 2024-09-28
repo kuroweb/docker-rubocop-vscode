@@ -1,0 +1,15 @@
+services:
+  app:
+    build:
+      context: .
+      args:
+        - RUBY_VERSION=$RUBY_VERSION
+        - RUBOCOP_VERSION=$RUBOCOP_VERSION
+    volumes:
+      - bundle:/usr/local/bundle
+      - $RUBOCOP_YML_PATH:/tmp/.rubocop.yml
+      - $SOURCE_PATH:$SOURCE_PATH
+    tty: true
+
+volumes:
+  bundle:

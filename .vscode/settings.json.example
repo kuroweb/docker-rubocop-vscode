@@ -1,0 +1,7 @@
+{
+  // 本プロジェクトにあるrubocopファイルまでのフルパス
+  "ruby.rubocop.executePath": "/path/to/docker-rubocop/bin/",
+  "[ruby]": {
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
+  }
+}
