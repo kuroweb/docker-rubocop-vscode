@@ -2,5 +2,9 @@
 
 cd $(dirname $0)/..
 
-OPTION=$(test -p /dev/stdin && echo '-T')
-docker compose exec $OPTION app rubocop -c /tmp/.rubocop.yml $@
+# コンテナが動作しているか確認
+if ! docker compose ps | grep -q 'app'; then
+  docker compose up -d
+fi
+
+docker compose exec -T app rubocop -c /tmp/.rubocop.yml $@
