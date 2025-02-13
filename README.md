@@ -35,8 +35,6 @@
 
   ```json
   {
-    // 本プロジェクトにあるrubocopファイルまでのフルパス
-    // example: /Users/<username>/docker-rubocop/bin/
     "ruby.rubocop.executePath": "/path/to/docker-rubocop/bin/",
     "[ruby]": {
       "editor.defaultFormatter": "misogi.ruby-rubocop"
