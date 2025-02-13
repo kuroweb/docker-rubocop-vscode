@@ -35,7 +35,7 @@
 
   ```json
   {
-    "ruby.rubocop.executePath": "/path/to/docker-rubocop/bin/",
+    "ruby.rubocop.executePath": "/path/to/docker-rubocop-vscode/bin/",
     "[ruby]": {
       "editor.defaultFormatter": "misogi.ruby-rubocop"
     }
